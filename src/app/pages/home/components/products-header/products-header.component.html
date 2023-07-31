@@ -1,0 +1,15 @@
+<!-- stop html from yellowlining -->
+<mat-card class="mb-4">
+    <div class="flex justify-beween">
+        <div>
+            <button mat-button [matMenuTriggerFor]="sortByMenu">
+                Sort by {{sort}}
+            </button>
+            <mat-menu #sortByMenu="matMenu">
+                <button (click)="onSortUpdated('descending')" mat-menu-item>descending</button>
+                <button (click)="onSortUpdated('ascending')" mat-menu-item>ascending </button>
+
+            </mat-menu>
+        </div>
+    </div>
+</mat-card>
