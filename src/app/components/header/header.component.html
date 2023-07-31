@@ -1,0 +1,32 @@
+<mat-toolbar class="max-w-7xl mx-auto border-x justify-between">
+    <a routerLink="home">Academic Anatomic</a>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon [matBadge]="1" matBadgeColor="warn">shopping_cart</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+        <div class="p-3 divide-y divide-solid">
+            <div class="p-3 flex justify-between">
+                <span class="mr-20">1 Items</span>
+                <a routerLink="cart">View cart</a>
+            </div>
+            <div class="py-4">
+                <div class="flex justify-between font-light mb-2">
+                    Academic Atlas x 1
+                    <span class="font-bold">{{ '150' | currency:'€' }}</span>
+                </div>
+                <div class="flex justify-between font-light mb-2">
+                    Academic Atlas x 1
+                    <span class="font-bold">{{ '150' | currency:'€' }}</span>
+                </div>
+                <div class="flex justify-between font-light mb-2">
+                    Academic Atlas x 1
+                    <span class="font-bold">{{ '150' | currency:'€' }}</span>
+                </div>
+            </div>
+            <div class="flex justify-between py-4 font-light">
+                Total:
+                <span class="font-bold">{{ '450' | currency: '€' }}</span>
+            </div>
+        </div>
+    </mat-menu>
+</mat-toolbar>
