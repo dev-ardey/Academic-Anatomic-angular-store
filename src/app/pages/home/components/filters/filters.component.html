@@ -1,0 +1,15 @@
+
+<!-- ngIf = only show if there are defined categories  -->
+<mat-expansion-panel *ngIf="categories">
+    <mat-expansion-panel-header>
+        <mat-panel-title>CATEGORIES</mat-panel-title>
+    </mat-expansion-panel-header>
+    <!-- shows elements in the list -->
+    <!-- multipe false is only select one item-->
+    <mat-selection-list [multiple]="false">
+        <!-- loop trough categories array -->
+        <mat-list-option *ngFor="let category of categories" [value]="category">
+            <button (click)="onShowCategory(category)">{{ category }}</button>
+        </mat-list-option>
+    </mat-selection-list>
+</mat-expansion-panel>
