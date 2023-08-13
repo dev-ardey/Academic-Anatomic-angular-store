@@ -1,5 +1,8 @@
+<!-- stop html from yellowlining -->
+
+
 <mat-toolbar class="max-w-7xl mx-auto border-x justify-between">
-    <a routerLink="home">Academic Anatomic</a>
+    <a routerLink="home">ACADEMIC ANATOMIC shop</a>
     <button mat-icon-button [matMenuTriggerFor]="menu">
         <mat-icon [matBadge]="1" matBadgeColor="warn">shopping_cart</mat-icon>
     </button>
@@ -26,6 +29,14 @@
             <div class="flex justify-between py-4 font-light">
                 Total:
                 <span class="font-bold">{{ '450' | currency: '€' }}</span>
+            </div>
+            <div class="pt-4 flex justify-between">
+                <button routerLink="cart" class="bg-green-500 text-white rounded-full w-9 h-9">
+                    <mat-icon>shopping_cart</mat-icon>
+                </button>
+                <button class="bg-rose-500 text-white rounded-full w-9 h-9">
+                    <mat-icon>remove_shopping_cart</mat-icon>
+                </button>
             </div>
         </div>
     </mat-menu>
