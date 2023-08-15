@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { Cart } from 'src/app/models/cart.model';
+import { Cart, CartItem } from 'src/app/models/cart.model';
+import { CartService } from 'src/app/services/cart.service';
 
 @Component({
   selector: 'app-header',
@@ -8,7 +9,7 @@ import { Cart } from 'src/app/models/cart.model';
 })
 export class HeaderComponent {
 
-  private _cart: Cart = { items: []};
+  private _cart: Cart = { items: [] };
   itemsQuantity = 0;
 
   @Input()
@@ -26,6 +27,15 @@ export class HeaderComponent {
       .reduce((prev, current) => prev + current, 0);
   }
 
-  constructor() { }
+  // private means we are only using it in class component, and not in the html
+  constructor(private cartService: CartService) { }
+
+  getTotal(items: Array<CartItem>): number {
+    return this.cartService.getTotal(items);
+  }
+
+  onClearCart() {
+    this.cartService.clearCart();
+  }
 
 }
