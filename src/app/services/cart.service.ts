@@ -29,9 +29,9 @@ export class CartService {
     }
 
     this.cart.next({ items });
-    this._snackBar.open('1 item added to cart.', 'Ok', { duration: 3000 });    
+    this._snackBar.open('1 item added to cart.', 'Ok', { duration: 3000 });
   }
-  
+
   getTotal(items: Array<CartItem>): number {
     return items.
       map((item) => item.price * item.quantity)
@@ -42,6 +42,18 @@ export class CartService {
     this.cart.next({ items: [] });
     this._snackBar.open('Cart is cleared', 'Ok', { duration: 3000 }
     );
+  }
+
+
+  removeFromCart(item: CartItem): void {
+    const filteredItems = this.cart.value.items.filter(
+      // only remove item if its this id 
+      // all items that are not this id will pass
+      (_item) => _item.id !== item.id
+    );
+    this.cart.next({ items: filteredItems });
+    this._snackBar.open('Item removed', 'Ok', { duration: 3000 });
+
   }
 }
 
