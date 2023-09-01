@@ -1,5 +1,5 @@
-<mat-card class="max-w-7xl mx-auto" *ngIf="cart.items.length">
-    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 w-full">
+<mat-card class="max-w-7xl mx-auto bg-inherit" *ngIf="cart.items.length">
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 w-full bg-inherit">
         <!-- column def matches the data src-->
         <ng-container matColumnDef="product">
             <th mat-header-cell *matHeaderCellDef>Product</th>
@@ -7,7 +7,7 @@
                 <img src="{{element.product}}" alt="Product" class="w-[100px] my-5" />
             </td>
             <td mat-footer-cel *matFooterCellDef>
-                <button mat-raised-button routerLink="/home">Continue shopping</button>
+                <button mat-raised-button routerLink="/home" class="bg-inherit">Continue shopping</button>
             </td>
         </ng-container>
 
@@ -83,9 +83,9 @@
         <tr mat-footer-row *matFooterRowDef="displayedColumns"></tr>
     </table>
 </mat-card>
-<mat-card class="max-w-7xl mx-auto" *ngIf="!cart.items.length">
+<mat-card class="max-w-7xl mx-auto bg-inherit" *ngIf="!cart.items.length">
     <p>
         Your cart is empty.
-        <button mat-raised-button routerLink="/home">Start shopping</button>
+        <button mat-raised-button routerLink="/home" class="bg-inherit">Start shopping</button>
     </p>
 </mat-card>

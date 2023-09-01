@@ -12,7 +12,7 @@ export class ProductsHeaderComponent implements OnInit {
 
   
   sort = 'descending';
-  itemsShowCount = 13;
+  itemsShowCount = 12;
 
   constructor() { }
 

@@ -1,6 +1,6 @@
 <!-- add an fixed width like (w-64) to mat-card so that i has a fixed width. then the truncate & hover function works properly  -->
 
-<mat-card *ngIf="product" [ngClass]="{'text-center': !fullWidthMode}">
+<mat-card *ngIf="product" [ngClass]="{'text-center': !fullWidthMode}" class="bg-inherit">
     <div [ngClass]="{'flex': fullWidthMode}">
         <!-- custom property ? h = height [+custom value] -->
         <img class="mb-1 mx-auto h-[200px]" [ngClass]="{'h-200px': !fullWidthMode, 'h-[360px]': fullWidthMode}"

@@ -1,5 +1,5 @@
 <!-- stop html from yellowlining -->
-<mat-card class="mb-5">
+<mat-card class="mb-5 bg-inherit">
     <div class="flex justify-between">
         <div>
             <button mat-button [matMenuTriggerFor]="sortByMenu">
@@ -7,7 +7,7 @@
                 <mat-icon>expand_more</mat-icon>
 
             </button>
-            <mat-menu #sortByMenu="matMenu">
+            <mat-menu #sortByMenu="matMenu" class="matMenuBackground">
                 <button (click)="onSortUpdated('descending')" mat-menu-item>descending</button>
                 <button (click)="onSortUpdated('ascending')" mat-menu-item>ascending </button>
             </mat-menu>
@@ -15,7 +15,9 @@
         <div class="flex items-center">
             <div>
                 <button mat-button [matMenuTriggerFor]="menu">
-                    show {{ itemsShowCount }}
+                    show 
+                    {{ itemsShowCount }}
+
                     <mat-icon>expand_more</mat-icon>
                 </button>
                 <mat-menu #menu="matMenu">

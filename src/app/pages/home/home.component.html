@@ -1,8 +1,8 @@
 <!-- stop html from yellowlining -->
 
 
-<mat-drawer-container [autosize]="true" class="min-h-full max-w-7xl mx-auto border-x">
-    <mat-drawer mode="side" opened class="p-6">
+<mat-drawer-container [autosize]="true" class="min-h-full max-w-7xl mx-auto border-x bg-inherit">
+    <mat-drawer mode="side" opened class="p-6 bg-inherit ">
         <app-filters (showCategory)="onShowCategory($event)"></app-filters>
     </mat-drawer>
     <mat-drawer-content class="p-6">

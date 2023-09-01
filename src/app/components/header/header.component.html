@@ -1,13 +1,13 @@
 <!-- stop html from yellowlining -->
 
 
-<mat-toolbar class="max-w-7xl mx-auto border-x justify-between">
-    <a routerLink="home">ACADEMIC ANATOMIC shop</a>
+<mat-toolbar class="max-w-7xl mx-auto border-x justify-between bg-inherit">
+    <a routerLink="home">ACADEMIC ANATOMIC SHOP</a>
     <button mat-icon-button [matMenuTriggerFor]="menu">
         <mat-icon [matBadge]="itemsQuantity" [matBadgeHidden]="!itemsQuantity"
             matBadgeColor="warn">shopping_cart</mat-icon>
     </button>
-    <mat-menu #menu="matMenu">
+    <mat-menu #menu="matMenu" class="matMenuBackground">
         <div class="p-3 divide-y divide-solid">
             <div class="p-3 flex justify-between">
                 <span class="mr-20">{{ itemsQuantity }} Items</span>
