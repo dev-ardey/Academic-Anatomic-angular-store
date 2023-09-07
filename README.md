@@ -1,5 +1,10 @@
 # Academic Anatomic Angular Store
 
+A functional Ecommerce experience for Academic Anatomic.
+
+The project needed to be reliable, safe and secure for online opportunities.
+
+To Reach a broader audience and ensuring a brighter future.
 
 
 # AngularStore Application:
