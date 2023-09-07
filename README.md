@@ -9,9 +9,9 @@ To Reach a broader audience and ensuring a brighter future.
 
 # AngularStore Application:
 
-   🎛️ HTML Structure: 
+🎛️ HTML Structure: 
    
-   The HTML structure of the application includes basic metadata and imports necessary for the Angular application. It sets up the app-root component.
+      The HTML structure of the application includes basic metadata and imports necessary for the Angular application. It sets up the app-root component.
 
 🅰️ Angular Bootstrapping: 
 
