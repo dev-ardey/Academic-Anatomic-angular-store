@@ -23,9 +23,9 @@
     * Item Actions: Users can perform actions on items in the cart, such as removing an item, adding or reducing the quantity, and clearing the entire cart.
     * Checkout: The component includes a button for checkout that appears to connect to a Stripe integration for payment processing.
 
-   🗂️ Cart Service (CartService):
+🗂️ Cart Service (CartService):
    
-    * Cart Management: The service is responsible for managing the cart's state, including adding, removing, and updating items.
+       * Cart Management: The service is responsible for managing the cart's state, including adding, removing, and updating items.
     * Quantity Tracking: It keeps track of the quantity of each item in the cart.
     * Total Price Calculation: The service calculates and provides the total price of items in the cart.
     * Clearing the Cart: It allows for clearing the cart entirely.
@@ -39,11 +39,11 @@
 
 💵 Stripe Integration: 
 
-   The application includes integration with Stripe for processing payments, and it appears to generate a Stripe session for checkout.
+      The application includes integration with Stripe for processing payments, and it appears to generate a Stripe session for checkout.
    
 🖼️ Styling:
 
-   The application may include CSS styling (not shown in the provided code) for visual presentation and user-friendly design.
+      The application may include CSS styling (not shown in the provided code) for visual presentation and user-friendly design.
   		
  📈 Error Handling: 
  
