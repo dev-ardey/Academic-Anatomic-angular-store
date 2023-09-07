@@ -23,14 +23,16 @@ To Reach a broader audience and ensuring a brighter future.
     * Clear Cart: Users can clear the cart by clicking a "Clear Cart" button.
     * Total Price: The header displays the total price of items in the cart.
     * Navigation: The header may also include navigation elements (not shown in the provided code).
- 		🛒Cart Component (app-cart):
+    
+ 🛒Cart Component (app-cart):
+ 
     * Cart Items: The cart component displays a list of items in the cart, including product images, names, prices, quantities, and total prices.
     * Item Actions: Users can perform actions on items in the cart, such as removing an item, adding or reducing the quantity, and clearing the entire cart.
     * Checkout: The component includes a button for checkout that appears to connect to a Stripe integration for payment processing.
 
 🗂️ Cart Service (CartService):
    
-       * Cart Management: The service is responsible for managing the cart's state, including adding, removing, and updating items.
+    * Cart Management: The service is responsible for managing the cart's state, including adding, removing, and updating items.
     * Quantity Tracking: It keeps track of the quantity of each item in the cart.
     * Total Price Calculation: The service calculates and provides the total price of items in the cart.
     * Clearing the Cart: It allows for clearing the cart entirely.
